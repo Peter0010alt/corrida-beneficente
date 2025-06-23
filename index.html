@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Corrida Beneficente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Corrida Beneficente</h1>
+
+    <form action="confirmationPage.html">
+
+        <!-- Campo Nome -->
+        <div> 
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+            </p>
+        </div>
+
+        <!-- Campo Idade -->
+        <div>
+            <p>
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" name="idade" placeholder="Sua idade aqui" required>
+            </p>
+        </div>
+
+        <!-- Campo Telefone -->
+        <div>
+            <p>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </p>
+        </div>
+
+        <!-- Campo Tamanho da camiseta -->
+        <div>
+            <p>
+                <label for="camiseta">Tamanho da Camiseta:</label><br>
+                <select id="camiseta" name="camiseta" required>
+                    <option value="">Selecione</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </p>
+        </div>
+
+        <!-- Campo Genero -->
+        <div>
+            <p>
+                <label for="genero">Gênero:</label><br>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </p>
+        </div>
+
+        <!-- Campo Distancia -->
+        <div>
+            <p>
+
+                <label>Distância:</label><br>
+
+                <input type="radio" id="distancia5" name="distancia" value="5km" required>
+                <label for="distancia5">5 km</label>
+
+                <input type="radio" id="distancia10" name="distancia" value="10km">
+                <label for="distancia10">10 km</label>
+
+            </p>
+        </div>
+
+        <!-- Botao Inscrever -->
+        <div>
+            <button type="submit">Inscrever-se</button>
+        </div>
+
+    </form>
+</body>
+</html>
